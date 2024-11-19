@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.game-container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#sentence-container {
+    margin-bottom: 20px;
+}
+
+#sentence {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+#answers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.answer-btn {
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.answer-btn:hover {
+    background-color: #2980b9;
+}
+
+.feedback {
+    font-size: 1.1em;
+    margin-top: 10px;
+    color: #e74c3c;
+}
+
+.correct {
+    background-color: #2ecc71;
+}
+
+.incorrect {
+    background-color: #e74c3c;
+}
+
+#next-btn,
+#restart-btn {
+    margin-top: 20px;
+}
+
+#next-btn button,
+#restart-btn button {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#next-btn button:hover,
+#restart-btn button:hover {
+    background-color: #27ae60;
+}

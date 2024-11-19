@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Určování vedlejších vět</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Určování vedlejších vět</h1>
+        <div id="sentence-container">
+            <p id="sentence">Otázka bude zde...</p>
+        </div>
+        <div id="answers">
+            <button class="answer-btn" onclick="checkAnswer(this, 'Věta podmětná')">Věta podmětná</button>
+            <button class="answer-btn" onclick="checkAnswer(this, 'Věta předmětná')">Věta předmětná</button>
+            <button class="answer-btn" onclick="checkAnswer(this, 'Věta přívlastková')">Věta přívlastková</button>
+            <button class="answer-btn" onclick="checkAnswer(this, 'Věta doplňková')">Věta doplňková</button>
+            <button class="answer-btn" onclick="checkAnswer(this, 'Věta příslovečná - místní')">Věta příslovečná - místní</button>
+            <button class="answer-btn" onclick="checkAnswer(this, 'Věta příslovečná - časová')">Věta příslovečná - časová</button>
+            <button class="answer-btn" onclick="checkAnswer(this, 'Věta příslovečná - způsobová')">Věta příslovečná - způsobová</button>
+            <button class="answer-btn" onclick="checkAnswer(this, 'Věta příslovečná - měrová')">Věta příslovečná - měrová</button>
+            <button class="answer-btn" onclick="checkAnswer(this, 'Věta příslovečná - příčinná/důvodová')">Věta příslovečná - příčinná/důvodová</button>
+            <button class="answer-btn" onclick="checkAnswer(this, 'Věta příslovečná - účelová')">Věta příslovečná - účelová</button>
+            <button class="answer-btn" onclick="checkAnswer(this, 'Věta příslovečná - podmínková')">Věta příslovečná - podmínková</button>
+            <button class="answer-btn" onclick="checkAnswer(this, 'Věta příslovečná - přípustková')">Věta příslovečná - přípustková</button>
+        </div>
+        <div id="correct-answer" class="feedback"></div>
+        <div id="next-btn" style="display: none;">
+            <button onclick="nextQuestion()">Další otázka</button>
+        </div>
+        <div id="result" class="feedback"></div>
+        <div id="restart-btn" style="display: none;">
+            <button onclick="restartGame()">Začít znovu</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
